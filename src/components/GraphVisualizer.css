@@ -1,0 +1,76 @@
+.graph-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 1rem;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.input-section label {
+  font-weight: bold;
+  color: #333;
+}
+
+.input-section input,
+.input-section select,
+.input-section textarea {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-group button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #483d8b;
+}
+
+.traversal-output {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .graph-container {
+    padding: 0.5rem;
+  }
+
+  svg {
+    height: 350px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,96 @@
+.tree-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e0bbff, #b2e0ff);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tree-container h2 {
+  text-align: center;
+  color: #0b2471;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.tree-container label {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  display: block;
+}
+
+.tree-container input,
+.tree-container select,
+.tree-container textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.button-group button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button-group button:first-child {
+  background-color: #2563eb; /* blue */
+  color: white;
+}
+
+.button-group button:first-child:hover {
+  background-color: #1e40af;
+}
+
+.button-group button:last-child {
+  background-color: #059669; /* green */
+  color: white;
+}
+
+.button-group button:last-child:hover {
+  background-color: #047857;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #111827;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .tree-container {
+    padding: 1rem;
+  }
+
+  svg {
+    height: 350px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
